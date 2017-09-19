@@ -1,0 +1,31 @@
+﻿<ion-nav-bar>
+    <ion-view view-title="Penumbra Login" name="login-view">
+        <ion-content class="padding" overflow-scroll="true">
+            <form ng-submit='signUpUser(data)' novalidate>
+                <div class="list">
+                    <label class="item item-input item-stacked-label">
+                        <span class="input-label">First Name</span>
+                        <input type="text" placeholder="First Name" ng-model="data.FirstName">
+                    </label>
+                    <label class="item item-input item-stacked-label">
+                        <span class="input-label">Last Name</span>
+                        <input type="text" placeholder="Lase Name" ng-model="data.LastName">
+                    </label>
+                    <label class="item item-input item-stacked-label">
+                        <span class="input-label">User Name</span>
+                        <input type="text" placeholder="User Name" ng-model="data.UserName">
+                    </label>
+                    <label class="item item-input item-stacked-label">
+                        <span class="input-label">Password</span>
+                        <input type="password" placeholder="Password" ng-model="data.Password">
+                    </label>
+                    <label class="item item-input item-stacked-label">
+                        <span class="input-label">Email</span>
+                        <input type="text" placeholder="Email" ng-model="data.MailId">
+                    </label>
+                </div>
+                <button class="button button-block buttonColor">Sign Up</button>
+            </form>
+        </ion-content>
+    </ion-view>
+</ion-nav-bar>

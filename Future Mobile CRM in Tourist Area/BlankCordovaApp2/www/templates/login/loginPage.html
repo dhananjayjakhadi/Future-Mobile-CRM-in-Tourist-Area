@@ -1,0 +1,25 @@
+﻿<ion-nav-bar>
+    <ion-view view-title="Penumbra Login" name="login-view">
+        <ion-content class="padding" overflow-scroll="true">
+            <form ng-submit='validateUser(data)' novalidate>
+                <div class="list list-inset">
+                    <label class="item item-input marginBottom">
+                        <input type="text" placeholder="User Name" ng-model="data.username">
+                    </label>
+                    <label class="item item-input">
+                        <input type="password" placeholder="Password" ng-model="data.password">
+                    </label>
+                </div>
+                <button class="button button-block buttonColor">Login</button>
+            </form>
+            <div class="card">
+                <div class="item item-divider">
+                    New User
+                </div>
+                <div class="item item-text-wrap">
+                    <button class="button button-block buttonColor" on-tap="navigateToSignIn()">Sign Up</button>
+                </div>
+            </div>
+        </ion-content>
+    </ion-view>
+</ion-nav-bar>

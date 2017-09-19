@@ -1,0 +1,19 @@
+﻿<ion-view title="Emergency No">
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+    <ion-content class="has-header">
+        <div class="list card" ng-repeat="em in emergencyList">
+            <div class="item item-body">
+                <h2>{{em.name}}</h2>
+                <h3>{{em.phone}}</h3>
+            </div>
+
+            <div class="item item-body">
+                <p>
+                    <a href="#" class="subdued" ng-click="navigateToLocation(em)">Navigate</a>
+                </p>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

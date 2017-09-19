@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src * 'self'
+          'unsafe-inline' 'unsafe-eval' http://* https://* data: cdvfile://* content://*;">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>Penumbra</title>
+
+    <link href="css/ionic.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet"/>
+    <script src="scripts/libary/ionic.bundle.min.js"></script>
+    <script src="scripts/libary/lokijs.js"></script>
+    <script src="scripts/libary/loki-angular.js"></script>
+    <script src="scripts/libary/restangular.min.js"></script>
+    <script src="scripts/libary/underscore-min.js"></script>
+
+    <!-- App related scripts -->
+    <script src="scripts/common/app.js"></script>
+    <script src="scripts/controller/appCtrl.js"></script>
+    <script src="scripts/controller/attractionsCtrl.js"></script>
+    <script src="scripts/controller/hotelsCtrl.js"></script>
+    <script src="scripts/db/dbHelper.js"></script>
+    <script src="scripts/db/dbModule.js"></script>
+    <script src="scripts/common/main.js"></script>
+
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBo1F5_DhwusNf05P_rjpVH2peZB4L3StI&sensor=true"></script>
+
+</head>
+<body ng-app="starter">
+    <ion-nav-view></ion-nav-view>
+    <!--<ion-content ng-controller="mapController">
+        <div id="map" data-tap-disabled="true"></div>
+    </ion-content>-->
+    
+</body>
+
+</html>
